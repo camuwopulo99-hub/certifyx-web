@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": { "includeFiles": "seed.json" }
+  },
+  "rewrites": [
+    { "source": "/api", "destination": "/api/index" },
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ]
+}
